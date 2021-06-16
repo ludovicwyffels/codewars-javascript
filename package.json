@@ -1,0 +1,59 @@
+{
+  "name": "codewars-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "xo",
+    "test": "jest",
+    "test-watch": "jest --watchAll",
+    "update-index": "node ./lib/index/index-generator.js",
+    "install-generator-deps": "cd ./lib/katas && npm install",
+    "create-kata": "node --no-warnings ./lib/katas/kata-generator.js --link"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "husky": "^6.0.0",
+    "jest": "^27.0.4",
+    "jest-extended": "^0.11.5",
+    "mocha": "^9.0.0",
+    "prettier": "^2.3.1",
+    "xo": "^0.40.2"
+  },
+  "xo": {
+    "esnext": true,
+    "extends": [
+      "prettier",
+      "plugin:jest/recommended"
+    ],
+    "ignores": [
+      "lib"
+    ],
+    "rules": {
+      "unicorn/no-reduce": 0,
+      "padding-line-between-statements": 0,
+      "unicorn/prefer-number-properties": 0,
+      "unicorn/no-fn-reference-in-iterator": 0,
+      "unicorn/prevent-abbreviations": 0,
+      "unicorn/prefer-module": 0
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
+  }
+}
