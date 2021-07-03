@@ -1,7 +1,7 @@
 const countSheeps = require('.');
 describe('Tests', () => {
-  it('test', () => {
-    var array1 = [
+  it('Simple test', () => {
+    const array1 = [
       true,
       true,
       true,

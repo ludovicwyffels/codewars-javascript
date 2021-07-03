@@ -15,6 +15,9 @@
   Solutions Link:
     https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/solutions
 */
+
+/* eslint-disable camelcase */
+
 // Long Solution
 /*
 function even_or_odd(number) {
