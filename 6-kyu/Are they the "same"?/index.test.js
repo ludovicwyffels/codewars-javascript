@@ -8,7 +8,7 @@ const a2 = [
   161 * 161,
   19 * 19,
   144 * 144,
-  19 * 19,
+  19 * 19
 ];
 test('Are they the "same"', () => {
   expect(comp(a1, a2)).toBeTrue();

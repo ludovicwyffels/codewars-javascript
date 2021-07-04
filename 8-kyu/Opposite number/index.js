@@ -7,8 +7,7 @@
     1: -1
     14: -14
     -34: 34
-    
-    
+
   Examples:
   Notes:
   Kata Link:

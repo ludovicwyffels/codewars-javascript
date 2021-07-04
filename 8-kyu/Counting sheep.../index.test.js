@@ -25,7 +25,7 @@ describe('Tests', () => {
       false,
       false,
       true,
-      true,
+      true
     ];
     expect(countSheeps(array1)).toBe(17);
   });

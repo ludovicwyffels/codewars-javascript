@@ -17,6 +17,6 @@ test('6', () => {
   expect(friend(['Love', 'Your', 'Face', '1'])).toEqual([
     'Love',
     'Your',
-    'Face',
+    'Face'
   ]);
 });

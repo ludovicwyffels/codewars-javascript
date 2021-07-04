@@ -4,17 +4,18 @@ module.exports = {
     commonjs: true,
     es2021: true,
     node: true,
-    'jest/globals': true,
+    'jest/globals': true
   },
-  extends: ['standard', 'eslint-config-prettier', 'plugin:jest/recommended'],
+  extends: ['standard', 'plugin:jest/recommended'],
+  plugins: ['import', 'standard', 'node', 'jest'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly'
+  },
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 12
   },
-  plugins: [
-    'eslint-plugin-import',
-    'eslint-plugin-jest',
-    'eslint-plugin-node',
-    'eslint-plugin-promise',
-  ],
-  rules: {},
+  rules: {
+    semi: [2, 'always']
+  }
 };

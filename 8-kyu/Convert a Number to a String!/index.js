@@ -7,8 +7,7 @@
     Examples:
     123 --> "123"
     999 --> "999"
-    
-    
+
   Examples:
   Notes:
   Kata Link:
@@ -19,7 +18,7 @@
     https://www.codewars.com/kata/5265326f5fda8eb1160004c8/solutions
 */
 // Long Solution
-function numberToString(num) {
+function numberToString (num) {
   return num.toString();
 }
 

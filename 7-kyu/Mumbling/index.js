@@ -7,9 +7,9 @@
     accum("abcd") -> "A-Bb-Ccc-Dddd"
     accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
     accum("cwAt") -> "C-Ww-Aaa-Tttt"
-    
+
     The parameter of accum is a string which includes only letters from a..z and A..Z.
-    
+
   Examples:
   Notes:
   Kata Link:
@@ -21,7 +21,7 @@
 */
 
 // Long Solution
-function accum(s) {
+function accum (s) {
   return s
     .split('')
     .map((char, index) => {

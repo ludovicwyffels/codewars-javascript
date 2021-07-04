@@ -1,11 +1,10 @@
 
-const rot13 = require('.')
-
+const rot13 = require('.');
 
 test('1', () => {
-  expect(rot13('test')).toBe('grfg')
-})
+  expect(rot13('test')).toBe('grfg');
+});
 
 test('2', () => {
-  expect(rot13('Test')).toBe('Grfg')
-})
+  expect(rot13('Test')).toBe('Grfg');
+});

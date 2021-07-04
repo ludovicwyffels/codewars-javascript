@@ -3,7 +3,7 @@
     Remove String Spaces
   Description:
     Simple, remove the spaces from the string, then return the resultant string.
-    
+
   Examples:
   Notes:
   Kata Link:
@@ -14,7 +14,7 @@
     https://www.codewars.com/kata/57eae20f5500ad98e50002c5/solutions
 */
 // Long Solution
-function noSpace(x) {
+function noSpace (x) {
   return x.replace(/\s/g, '');
 }
 // Short Solution

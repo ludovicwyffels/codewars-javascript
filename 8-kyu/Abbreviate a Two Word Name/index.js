@@ -7,7 +7,7 @@
     It should look like this:
     Sam Harris => S.H
     Patrick Feeney => P.F
-    
+
   Examples:
   Notes:
   Kata Link:
@@ -18,7 +18,7 @@
     https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/solutions
 */
 // Long Solution
-function abbrevName(name) {
+function abbrevName (name) {
   return name
     .split(' ')
     .map((x) => x.substr(0, 1).toUpperCase())

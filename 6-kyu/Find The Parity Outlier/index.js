@@ -6,11 +6,10 @@
     Examples
     [2, 4, 0, 100, 4, 11, 2602, 36]
     Should return: 11 (the only odd number)
-    
+
     [160, 3, 1719, 19, 11, 13, -21]
     Should return: 160 (the only even number)
-    
-    
+
   Examples:
   Notes:
   Kata Link:
@@ -21,7 +20,7 @@
     https://www.codewars.com/kata/5526fc09a1bbd946250002dc/solutions
 */
 // Long Solution
-function findOutlier(int) {
+function findOutlier (int) {
   const even = int.filter((a) => a % 2 === 0);
   const odd = int.find((a) => a % 2 !== 0);
   return even.length === 1 ? even[0] : odd;

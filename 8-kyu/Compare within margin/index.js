@@ -10,7 +10,7 @@
     Example: if a = 3, b = 5 and the margin = 3, since a and b are no more than 3 apart, close_compare should return 0. Otherwise, if instead margin = 0, a is lower than b and close_compare should return -1.
     Assume: margin >= 0
     Tip: Some languages have a way to make arguments optional.
-    
+
   Examples:
   Notes:
   Kata Link:
@@ -21,7 +21,7 @@
     https://www.codewars.com/kata/56453a12fcee9a6c4700009c/solutions
 */
 // Long Solution
-function closeCompare(a, b, margin = 0) {
+function closeCompare (a, b, margin = 0) {
   if (Math.abs(a - b) <= margin) return 0;
   if (a < b) return -1;
   return 1;

@@ -11,10 +11,10 @@
     1900 --> 19
     1601 --> 17
     2000 --> 20
-    
-    Hope you enjoy it .. Awaiting for Best Practice Codes 
+
+    Hope you enjoy it .. Awaiting for Best Practice Codes
     Enjoy Learning !!!
-    
+
   Examples:
   Notes:
   Kata Link:
@@ -25,7 +25,7 @@
     https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/solutions
 */
 // Long Solution
-function century(year) {
+function century (year) {
   return Math.ceil(year / 100);
 }
 

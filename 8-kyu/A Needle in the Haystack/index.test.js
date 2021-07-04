@@ -11,7 +11,7 @@ describe('Tests', () => {
       2,
       '3',
       true,
-      false,
+      false
     ];
     const haystack2 = [
       '283497238987234',
@@ -20,7 +20,7 @@ describe('Tests', () => {
       'some random junk',
       'a piece of hay',
       'needle',
-      'something somebody lost a while ago',
+      'something somebody lost a while ago'
     ];
     const haystack3 = [
       1,
@@ -66,7 +66,7 @@ describe('Tests', () => {
       32,
       3,
       45,
-      54,
+      54
     ];
 
     expect(findNeedle(haystack1)).toBe('found the needle at position 3');
