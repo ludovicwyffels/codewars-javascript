@@ -13,3 +13,7 @@ const a2 = [
 test('Are they the "same"', () => {
   expect(comp(a1, a2)).toBeTrue();
 });
+
+test('undefined array', () => {
+  expect(comp(undefined, undefined)).toBeFalse();
+});

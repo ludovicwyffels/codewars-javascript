@@ -1,8 +1,7 @@
 const iqTest = require('.');
-test('2', () => {
+test('iqTest', () => {
   expect(iqTest('2 4 7 8 10')).toBe(3);
-});
-
-test('3', () => {
   expect(iqTest('1 2 2')).toBe(1);
+  expect(iqTest('-1 -1')).toBe(0);
+  expect(iqTest('0.75 0.75')).toBe(0);
 });
