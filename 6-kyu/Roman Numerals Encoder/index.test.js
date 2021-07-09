@@ -1,4 +1,4 @@
-const { solutionLong: solution } = require('.');
+const { solutionShort: solution } = require('.');
 describe('Roman Numerals Encoder', () => {
   it('should handle small numbers', () => {
     expect(solution(1)).toBe('I');

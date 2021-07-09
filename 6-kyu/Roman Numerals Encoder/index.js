@@ -68,7 +68,7 @@
     https://www.codewars.com/kata/51b62bf6a9c58071c600001b/solutions
 */
 // Long Solution
-function solutionLong (number, str = '') {
+/* function solutionLong (number, str = '') {
   if (number >= 1000) {
     str += 'M';
     number -= 1000;
@@ -155,10 +155,10 @@ function solutionLong (number, str = '') {
     number -= 1;
   }
   return number ? solutionLong(number, str) : str;
-}
+} */
 
 // Long Solution - reduce cognitive complexity
-function solutionLong2 (number, str = '') {
+/* function solutionLong2 (number, str = '') {
   if (number >= 1000) {
     str += 'M';
     number -= 1000;
@@ -200,7 +200,7 @@ function solutionLong2 (number, str = '') {
     number -= 1;
   }
   return number ? solutionLong(number, str) : str;
-}
+} */
 
 // Short Solution
 function solutionShort (number) {
@@ -225,7 +225,6 @@ function solutionShort (number) {
   for (const iterator of Object.keys(roman)) {
     const quantity = Math.floor(rest / roman[iterator]);
     rest -= quantity * roman[iterator];
-    // Console.log(`${number} = (${quantity} * ${roman[iterator]}) + ${rest}`);
     str += iterator.repeat(quantity);
     if (rest === 0) break;
   }
@@ -234,7 +233,7 @@ function solutionShort (number) {
 
 // Function Export
 module.exports = {
-  solutionLong,
-  solutionLong2,
+  // solutionLong,
+  // solutionLong2,
   solutionShort
 };
