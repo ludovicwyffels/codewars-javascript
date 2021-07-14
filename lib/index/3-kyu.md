@@ -1,0 +1,1 @@
+* [Sudoku Solver](https://github.com/ludovicwyffels/codewars-katas/tree/master/3-kyu/Sudoku%20Solver)

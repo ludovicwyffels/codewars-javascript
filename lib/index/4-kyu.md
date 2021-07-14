@@ -1,0 +1,1 @@
+* [Snail](https://github.com/ludovicwyffels/codewars-katas/tree/master/4-kyu/Snail)
