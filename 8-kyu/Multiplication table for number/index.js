@@ -17,7 +17,7 @@
     10 * 5 = 50
 
     P. S. You can use \n in string to jump to the next line.
-    Note: newlines should be added between rows, but there should be no trailing newline at the end.
+    Note: newlines should be added between rows, but there should be no trailing newline at the end. If you're unsure about the format, look at the sample tests.
 
   Examples:
   Notes:
@@ -31,15 +31,17 @@
 // Long Solution
 function multiTable (number) {
   let result = '';
-  for (let i = 1; i <= 10; i++) {
-    if (i === 10) {
-      result += `${i} * ${number} = ${i * number}`;
-    } else {
-      result += `${i} * ${number} = ${i * number}\n`;
+  for (let index = 1; index <= 10; index++) {
+    if (result !== '') {
+      result += '\n';
     }
+    result += `${index} * ${number} = ${index * number}`;
   }
   return result;
 }
-
+// Short Solution
+/*
+const multiTable = () => {}
+*/
 // Function Export
 module.exports = multiTable;
