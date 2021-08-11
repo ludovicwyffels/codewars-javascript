@@ -22,11 +22,6 @@
 */
 // Long Solution
 function zeroFill (number, size) {
-  // const numberPositive = Math.abs(~~number).toString();
-  // const difference = size - numberPositive.length;
-
-  // return [...new Array(difference).fill(0), numberPositive].join('');
-
   const num = Math.floor(Math.abs(number)).toFixed(0);
   return '0'.repeat(size - num.length > 0 ? size - num.length : 0) + num;
 }
